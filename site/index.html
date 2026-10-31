@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Safety Basics — Asdale Dynamics, LLC</title>
+<meta name="description" content="A beginner-friendly guide to AI safety basics: data privacy, spotting scams and deepfakes, and what never to paste into chatbots. Education only.">
+<style>
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #1f2937;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 24px;
+    background: #ffffff;
+  }
+  header {
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 20px;
+    margin-bottom: 32px;
+  }
+  h1 {
+    font-size: 28px;
+    margin: 0 0 8px 0;
+    color: #111827;
+  }
+  .subtitle {
+    font-size: 17px;
+    color: #4b5563;
+    margin: 0 0 16px 0;
+  }
+  .credit {
+    font-size: 14px;
+    color: #6b7280;
+    border-top: 1px solid #e5e7eb;
+    padding-top: 10px;
+    margin-top: 16px;
+  }
+  nav a {
+    text-decoration: none;
+    color: #2563eb;
+    margin-right: 16px;
+    font-size: 14px;
+  }
+  nav a:hover { text-decoration: underline; }
+  h2 {
+    font-size: 22px;
+    margin-top: 32px;
+    margin-bottom: 12px;
+    color: #111827;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 6px;
+  }
+  h3 { font-size: 17px; margin: 20px 0 8px 0; color: #111827; }
+  p { margin: 0 0 14px 0; }
+  ul, ol { margin: 8px 0 16px 0; padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  a { color: #2563eb; }
+  a:hover { text-decoration: underline; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+  }
+  th, td {
+    border: 1px solid #d1d5db;
+    padding: 8px 10px;
+    text-align: left;
+    font-size: 14px;
+  }
+  th { background: #f3f4f6; color: #111827; }
+  tr:nth-child(even) { background: #f9fafb; }
+  .checklist {
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 16px 0;
+  }
+  .checklist h3 { margin-top: 0; border-bottom: none; padding-bottom: 0; }
+  .checklist ul { margin: 10px 0 0 0; padding-left: 20px; }
+  .checklist li { list-style: none; margin-bottom: 8px; padding-left: 26px; position: relative; }
+  .checklist li::before {
+    content: "□";
+    position: absolute;
+    left: 0;
+    top: 1px;
+    color: #2563eb;
+    font-size: 16px;
+  }
+  .rule {
+    background: #eff6ff;
+    border-left: 4px solid #2563eb;
+    padding: 12px 16px;
+    margin: 16px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 14px;
+  }
+  .never-list {
+    background: #fef2f2;
+    border-left: 4px solid #dc2626;
+    padding: 12px 16px;
+    margin: 16px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 14px;
+  }
+  .never-list ul { margin: 8px 0 0 0; padding-left: 20px; }
+  .never-list li { margin-bottom: 4px; }
+  footer {
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid #e5e7eb;
+    font-size: 13px;
+    color: #6b7280;
+  }
+  .muted { color: #6b7280; font-size: 14px; }
+  @media (max-width: 600px) {
+    body { padding: 16px; }
+    h1 { font-size: 24px; }
+    h2 { font-size: 20px; }
+    nav a { display: block; margin: 6px 0; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>AI Safety Basics</h1>
+  <p class="subtitle">A beginner-friendly guide to data privacy, spotting scams and deepfakes, and what never to paste into chatbots.</p>
+  <nav>
+    <a href="#data-privacy">1. Data privacy</a>
+    <a href="#scams">2. Scams &amp; deepfakes</a>
+    <a href="#never-paste">3. What never to paste</a>
+    <a href="#checklists">4. Checklists</a>
+    <a href="#about">About</a>
+  </nav>
+  <div class="credit">
+    Published by <strong>Asdale Dynamics, LLC</strong><br>
+    Copyright (c) 2026 Asdale Dynamics, LLC
+  </div>
+</header>
+
+<main>
+
+<section id="intro">
+  <h2>About this guide</h2>
+  <p>AI chatbots and image generators are powerful tools, and like any tool they work best when you know how to use them safely. This manual is for anyone who is new to AI and wants to use it without worry.</p>
+  <p>Nothing here is meant to scare you off AI. The goal is simple: help you enjoy AI tools while keeping your personal information, your money, and your reputation safe.</p>
+  <p class="muted"><strong>Education only.</strong> This guide teaches AI safety basics. It is not legal, medical, financial, or cybersecurity advice.</p>
+</section>
+
+<section id="data-privacy">
+  <h2>1. Data privacy — keep your info yours</h2>
+  <p>When you type something into a chatbot, that text usually travels over the internet to a company's computers. Some companies may keep your messages to train future versions of their AI. Others delete them quickly. The safest rule is to assume anything you paste could be seen by someone else, and act accordingly.</p>
+
+  <h3>Good habits to start today</h3>
+  <ul>
+    <li><strong>Think before you paste.</strong> Ask: "Would I be comfortable if a stranger read this?" If the answer is no, don't paste it.</li>
+    <li><strong>Use generic examples.</strong> Instead of pasting your actual bank statement, paste a made-up example with fake numbers.</li>
+    <li><strong>Check the settings.</strong> Most chatbot apps have a privacy or data-use setting. Look for options like "train on my data" or "improve the model" and turn them off if you don't want your messages used.</li>
+    <li><strong>Delete old chats.</strong> If you're done with a conversation, delete it from your chat history when the app lets you.</li>
+    <li><strong>Log out on shared devices.</strong> If you use a public or shared computer, always log out when you're finished.</li>
+  </ul>
+
+  <h3>What counts as sensitive data</h3>
+  <p>Treat these as "never paste" unless you are certain the chatbot is private and local:</p>
+  <ul>
+    <li>Your full name, address, phone number, or email</li>
+    <li>Social Security number or other government ID numbers</li>
+    <li>Bank account, credit card, or payment details</li>
+    <li>Passwords, API keys, or secret codes</li>
+    <li>Medical records, test results, or health details about yourself or others</li>
+    <li>Someone else's private information (friends, family, patients, customers)</li>
+    <li>Work documents that belong to your employer and aren't public</li>
+  </ul>
+
+  <div class="rule">
+    <strong>Local AI keeps data on your device.</strong> If you run AI models locally on your own computer (often called "local AI" or "local LLMs"), your chats usually stay on your machine and never leave it. This is the most private way to use AI.
+  </div>
+</section>
+
+<section id="scams">
+  <h2>2. Spotting scams and deepfakes</h2>
+  <p>Scammers now use AI to write convincing emails, fake voices, and realistic images. The good news: most AI scams still leave clues. You don't need to be a tech expert to spot them.</p>
+
+  <h3>Common AI scam patterns</h3>
+  <table>
+    <tr><th>What it looks like</th><th>What to check</th></tr>
+    <tr><td>A message that creates urgency ("act now or lose your account")</td><td>Slow down. Legitimate companies don't demand immediate action by text or chat.</td></tr>
+    <tr><td>A request for money, gift cards, or crypto</td><td>Never send money to someone you only know online, especially if they ask for gift cards or crypto.</td></tr>
+    <tr><td>A voice call from a "relative" in trouble</td><td>Hang up and call that person back on a number you already know.</td></tr>
+    <tr><td>An email that looks official but has odd spelling or grammar</td><td>Check the sender's actual email address, not just the display name.</td></tr>
+    <tr><td>A photo or video of someone saying something shocking</td><td>Treat it as suspicious until you can verify it through another source.</td></tr>
+  </table>
+
+  <h3>Deepfake spotting checklist</h3>
+  <p>A deepfake is AI-made audio, video, or image meant to look real. Use these steps when something seems off:</p>
+  <ol>
+    <li><strong>Look at the eyes and mouth.</strong> In AI video, blinking may look unnatural, and lip movement may not match the audio.</li>
+    <li><strong>Listen for flat or robotic tone.</strong> AI voices often sound too even, or they mispronounce unusual names.</li>
+    <li><strong>Check the background.</strong> AI images often blur or warp the background, hands, or text.</li>
+    <li><strong>Reverse-image search.</strong> Save the image and run a reverse image search to see where else it appears.</li>
+    <li><strong>Verify through a separate channel.</strong> If a video claims a public figure said something, check a trusted news source before believing it.</li>
+    <li><strong>Call back on a known number.</strong> If someone claims to be a relative or colleague in an emergency, hang up and call them on a number you already have.</li>
+  </ol>
+
+  <h3>If you think you're being scammed</h3>
+  <ul>
+    <li>Don't reply. Don't click links. Don't call numbers in the message.</li>
+    <li>Talk to someone you trust.</li>
+    <li>Report it. In the U.S., you can report scams to the FTC at reportfraud.ftc.gov.</li>
+    <li>If money is involved, contact your bank right away.</li>
+  </ul>
+</section>
+
+<section id="never-paste">
+  <h2>3. What never to paste into chatbots</h2>
+  <p>This is the short, memorable list. Keep it nearby.</p>
+
+  <div class="never-list">
+    <strong>Never paste (or type) into a public chatbot:</strong>
+    <ul>
+      <li>Passwords and login credentials</li>
+      <li>API keys, secret keys, or access tokens</li>
+      <li>Credit card numbers, bank account numbers, or payment info</li>
+      <li>Social Security numbers or government ID numbers</li>
+      <li>Your full home address or phone number</li>
+      <li>Medical records, diagnoses, or test results (yours or anyone else's)</li>
+      <li>Private info about other people (friends, family, patients, customers, coworkers)</li>
+      <li>Employer documents that aren't public (contracts, payroll, internal memos, source code)</li>
+      <li>Anything you would not want a stranger to read</li>
+    </ul>
+  </div>
+
+  <h3>The "fake example" trick</h3>
+  <p>If you want help with something sensitive, make up a fake version first.</p>
+  <p><strong>Instead of:</strong> pasting your actual patient note<br>
+  <strong>Use:</strong> a made-up note with fake names, fake dates, and fake conditions</p>
+  <p><strong>Instead of:</strong> pasting your real budget spreadsheet<br>
+  <strong>Use:</strong> a sample spreadsheet with round, made-up numbers</p>
+
+  <div class="rule">
+    <strong>When in doubt, leave it out.</strong> If you're not sure whether something is safe to paste, don't paste it. You can always ask the chatbot a general question without sharing personal details.
+  </div>
+</section>
+
+<section id="checklists">
+  <h2>4. Step-by-step checklists</h2>
+  <p>Print these or keep them open on your phone.</p>
+
+  <div class="checklist">
+    <h3>Checklist A: Before you paste anything into a chatbot</h3>
+    <ul>
+      <li>I am not pasting passwords, API keys, or secret codes.</li>
+      <li>I am not pasting bank, credit card, or payment details.</li>
+      <li>I am not pasting government ID numbers (SSN, passport, etc.).</li>
+      <li>I am not pasting medical records or health details about myself or others.</li>
+      <li>I am not pasting private info about other people.</li>
+      <li>I am not pasting employer documents that aren't public.</li>
+      <li>If I need to share an example, I made up fake names and numbers instead.</li>
+      <li>I checked the chatbot's privacy settings and turned off data training if available.</li>
+    </ul>
+    <p class="muted"><strong>Rule of thumb:</strong> If you would not want a stranger to read it, do not paste it.</p>
+  </div>
+
+  <div class="checklist">
+    <h3>Checklist B: When you receive a surprising message, call, or image</h3>
+    <ul>
+      <li>I paused and did not act right away.</li>
+      <li>I checked the sender's actual email address or phone number.</li>
+      <li>I did not click any links or call any numbers in the message.</li>
+      <li>For a voice call, I hung up and called the person back on a known number.</li>
+      <li>For an image or video, I looked for unnatural eyes, mouth, lip-sync, or background.</li>
+      <li>I checked a trusted news source or reverse-image search before believing shocking claims.</li>
+      <li>If money was requested, I refused and talked to someone I trust.</li>
+    </ul>
+    <p class="muted"><strong>Rule of thumb:</strong> Urgency is a red flag. Slow down.</p>
+  </div>
+
+  <div class="checklist">
+    <h3>Checklist C: After you finish a chatbot session</h3>
+    <ul>
+      <li>I deleted the chat history if the app allows it.</li>
+      <li>I logged out if I was on a shared or public device.</li>
+      <li>I reviewed what I pasted and confirmed nothing sensitive was included.</li>
+      <li>If I pasted something sensitive by mistake, I changed the affected passwords and notified the right people.</li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <h2 id="about">About Asdale Dynamics, LLC</h2>
+  <p>Asdale Dynamics, LLC is an Indiana company founded in October 2026 by Dylan Asdale, a registered nurse turned AI author. The LLC focuses on beginner-friendly AI education, books and guides, and practical tools. Dylan writes AI explainers "like a friend would": plain English, step by step, never condescending. His book <em>The Massive AI Manual</em> and hub site dylanasdale.github.io help people understand AI without the jargon.</p>
+  <p>Learn more: <a href="https://dylanasdale.github.io" target="_blank" rel="noopener">https://dylanasdale.github.io</a></p>
+  <p class="muted">Copyright (c) 2026 Asdale Dynamics, LLC. All rights reserved.</p>
+  <p class="muted"><strong>Never medical advice.</strong> Asdale Dynamics, LLC is founded by a registered nurse, but nothing in this guide is medical advice. Talk to a qualified healthcare professional for health decisions.</p>
+</footer>
+
+</body>
+</html>
